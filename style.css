@@ -1,0 +1,89 @@
+body {
+  background-color: #000000;
+}
+
+a {
+  margin-left: 30px;
+  color: rgb(36, 161, 233);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+  margin-left: 30px;
+}
+
+.chessboard {
+  width: 640px;
+  height: 640px;
+  margin: 20px;
+  border: 10px solid rgb(0, 0, 0);
+}
+
+.black {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: #999;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.white {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.yellow {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(225, 255, 58);
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.red {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(226, 41, 41);
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.green {
+  float: left;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(19, 182, 33);
+  font-size: 50px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.correct {
+  font-size: 40px;
+}
+
+.right {
+  color: green;
+  font-size: 40px;
+}
