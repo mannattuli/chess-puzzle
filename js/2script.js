@@ -12,6 +12,7 @@ knight.addEventListener("click", function () {
 
 ans.addEventListener("click", function () {
   if (correct.classList.contains("right")) {
+    var second = 2000;
     correct.innerHTML = "Nice! What do you think is the next best move?";
     knight.innerHTML = "";
     ans.classList.remove("white");
@@ -19,8 +20,6 @@ ans.addEventListener("click", function () {
     knight.classList.remove("white");
     knight.classList.add("yellow");
     ans.innerHTML = "&#9816;";
-    king.innerHTML = "";
-    check.innerHTML = "&#9818;";
   } else {
     correct.innerHTML = "Click the piece first !!!";
   }
@@ -43,4 +42,36 @@ takes.addEventListener("click", function () {
     takes.classList.add("green");
     correct.innerHTML = "YOU WIN!!!";
   }
+});
+
+/*Solution Button*/
+var button = document.getElementById("solution");
+
+button.addEventListener("click", function () {
+  var delayInMilliseconds = 2000;
+  var second = 1000;
+  correct.innerHTML = "Solution:";
+  knight.innerHTML = "";
+  ans.classList.remove("white");
+  ans.classList.add("green");
+  knight.classList.remove("white");
+  knight.classList.add("yellow");
+  ans.innerHTML = "&#9816;";
+
+  setTimeout(() => {
+    king.innerHTML = "";
+    check.innerHTML = "&#9818;";
+  }, second);
+
+  setTimeout(function () {
+    takes.innerHTML = "&#9816;";
+    ans.innerHTML = "";
+    knight.classList.remove("yellow");
+    knight.classList.add("black");
+    ans.classList.remove("green");
+    ans.classList.add("yellow");
+    takes.classList.add("green");
+    correct.innerHTML = "Solution:";
+    knight.innerHTML = "";
+  }, delayInMilliseconds);
 });
