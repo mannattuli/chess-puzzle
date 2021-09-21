@@ -20,3 +20,16 @@ ans.addEventListener("click", function () {
     correct.innerHTML = "Click the piece first !!!";
   }
 });
+
+/*Solution Button*/
+var button = document.getElementById("solution");
+
+button.addEventListener("click", function () {
+  correct.innerHTML = "Solution:";
+  queen.innerHTML = "";
+  ans.classList.remove("white");
+  ans.classList.add("green");
+  queen.classList.remove("white");
+  queen.classList.add("yellow");
+  ans.innerHTML = "&#9813;";
+});
