@@ -12,6 +12,18 @@ a:hover {
   text-decoration: underline;
 }
 
+#solution {
+  float: right;
+  margin-right: 144px;
+  background: #333;
+  color: #fff;
+  font-size: inherit;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 p {
   color: white;
   margin-left: 30px;
@@ -20,6 +32,7 @@ p {
 .chessboard {
   width: 640px;
   height: 640px;
+  cursor: pointer;
   margin: 20px;
   border: 10px solid rgb(0, 0, 0);
 }
