@@ -13,8 +13,7 @@ a:hover {
 }
 
 #solution {
-  float: right;
-  margin-right: 144px;
+  margin-left: 25px;
   background: #333;
   color: #fff;
   font-size: inherit;
