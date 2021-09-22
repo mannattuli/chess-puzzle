@@ -20,6 +20,8 @@ ans.addEventListener("click", function () {
     knight.classList.remove("white");
     knight.classList.add("yellow");
     ans.innerHTML = "&#9816;";
+    king.innerHTML = "";
+    check.innerHTML = "&#9818;";
   } else {
     correct.innerHTML = "Click the piece first !!!";
   }
